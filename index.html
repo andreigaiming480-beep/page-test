@@ -1,1 +1,129 @@
-<h1>test page index</h1>
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ElectroComponents - Projecte escolar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Comentari: arxiu principal HTML -->
+</head>
+<body>
+  <!-- HEADER: nom de la botiga, logo i navegació -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Logo SVG simple -->
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="#0b2545"/>
+          <path d="M6 12h12" stroke="#1E90FF" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="8" cy="8" r="1.6" fill="#1E90FF"/>
+          <circle cx="16" cy="16" r="1.6" fill="#1E90FF"/>
+        </svg>
+        <span class="shop-name">ElectroComponents</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Inici</a>
+        <a href="#products">Productes</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contacte</a>
+      </nav>
+
+      <div class="cart-btn" id="cart-btn" title="Carret de la compra">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / BANNER -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <h1>Tot el que necessites per als teus projectes electrònics</h1>
+      <p class="lead">Components, sensors i microcontroladors per a treballs i pràctiques escolars.</p>
+      <a class="btn primary" href="#products">Veure productes</a>
+    </div>
+  </section>
+
+  <!-- AVANTATGES -->
+  <section class="advantages container">
+    <div class="adv-card"> 
+      <h3>Enviament ràpid</h3>
+      <p>Servei local i enviaments àgils per a projectes urgents.</p>
+    </div>
+    <div class="adv-card"> 
+      <h3>Components de qualitat</h3>
+      <p>Parts verificades i ideals per a pràctiques educatives.</p>
+    </div>
+    <div class="adv-card"> 
+      <h3>Suport tècnic</h3>
+      <p>Assessorament bàsic per a muntatges i proves.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓ DE PRODUCTES -->
+  <section class="container products-section" id="products">
+    <h2>Productes</h2>
+    <div class="filters">
+      <div id="categories" class="categories">
+        <button class="cat-btn" data-cat="Tots">Tots</button>
+        <button class="cat-btn" data-cat="Microcontroladors">Microcontroladors</button>
+        <button class="cat-btn" data-cat="Sensors">Sensors</button>
+        <button class="cat-btn" data-cat="Components bàsics">Components bàsics</button>
+        <button class="cat-btn" data-cat="Alimentació">Alimentació</button>
+        <button class="cat-btn" data-cat="Robòtica">Robòtica</button>
+      </div>
+    </div>
+
+    <div id="product-list" class="product-list">
+      <!-- Les targetes de productes es generaran amb JavaScript -->
+    </div>
+  </section>
+
+  <!-- CARRET (modal lateral) -->
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Carret</h3>
+      <button id="close-cart" class="close">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <!-- Elements del carret mostrats per JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="total">Total: <span id="cart-total">0.00</span> €</div>
+      <button id="checkout" class="btn primary">Simular Pagament</button>
+    </div>
+  </aside>
+
+  <!-- CONTACTE -->
+  <section class="container contact-section" id="contact">
+    <h2>Contacte</h2>
+    <form id="contact-form">
+      <label>Nom
+        <input type="text" id="contact-name" required>
+      </label>
+      <label>Email
+        <input type="email" id="contact-email" required>
+      </label>
+      <label>Missatge
+        <textarea id="contact-message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 ElectroComponents</div>
+      <div class="footer-contact">Email: <a href="mailto:info@electrocomponents.example">info@electrocomponents.example</a></div>
+      <div class="socials">
+        <a href="#">Twitter</a> · <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
