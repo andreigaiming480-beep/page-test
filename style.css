@@ -8,8 +8,8 @@
 :root{
   /* Fons principal (blau fosc) */
   --blue-dark: #0f172a; /* fons de la web, header i footer */
-  /* Color títols (blau clar) */
-  --title-color: #38bdf8; /* color per a h1, h2 */
+  /* Color títols (rosa pastel) */
+  --title-color: #FFB6C1; /* color per a h1, h2 */
   /* Botons */
   --btn-bg: #2563eb; /* fons botó */
   --btn-hover: #1d4ed8; /* hover botó */
