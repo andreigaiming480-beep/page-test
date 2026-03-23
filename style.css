@@ -11,8 +11,8 @@
   /* Color títols (rosa pastel) */
   --title-color: #FFB6C1; /* color per a h1, h2 */
   /* Botons */
-  --btn-bg: #2563eb; /* fons botó */
-  --btn-hover: #1d4ed8; /* hover botó */
+  --btn-bg: #FF69B4; /* fons botó rosa pastel fort */
+  --btn-hover: #E0568B; /* hover botó rosa més fosc */
   /* Colors neutres */
   --white: #ffffff;
   --muted: #94a3b8; /* text secundari */
